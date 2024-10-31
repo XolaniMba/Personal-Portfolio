@@ -14,7 +14,7 @@ body
     align-items: center;
 }
 body {
-    background-image: url("images/newbg.png");
+    background-image: url("images/background.png");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -174,18 +174,17 @@ body {
 }
 .myinfo div span
 {
-    color: #aaabb0;
+    color: #99ccff;
     letter-spacing: 1px;
 }
 .allInfo  button 
 {
     min-width: 150px;
     padding: 8px 18px;
-    border: 1px solid #787cb5;
+    border: 1px solid #99ccff;
     font-size: 18px;
-    background-color: #2b2a2f;
+    background-color: transparent;
     border-radius: 25px;
-    color: #aaabb0;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.4s;
@@ -193,8 +192,8 @@ body {
 }
 .allInfo  button:hover
 {
-    color: #787cb5;
-    border-color: #aaabb0;
+    color: #99ccff;
+    border-color: blue;
 }
 
 /* skillsSection */
