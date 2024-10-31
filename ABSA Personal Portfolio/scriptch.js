@@ -1,18 +1,15 @@
 // Predefined chatbot responses
 const responses = {
     "hello": "Hi there! How can I assist you today?",
-    "experience": "I have experience in cybersecurity and mainframe programming through the Absa COBOL program.",
-    "CV": "You can download my CV by clicking on the See my CV' button in the About section.",
-    "default": "Hi, How are you doing "
+    "hi": "Hi there! How can I assist you today?",
+    "projects": "Check out my latest projects:  My Data Manipulation and my Poerfolio project. You can view them in the Projects section of my website.",
+    "skills": "I am skilled in HTML, CSS, JavaScript, SAS, SQL, Python, and Flutter. Let me know if you want to know more about any of these!",
+    "contact": "You can find my contact information in the Contact section of my portfolio.",
+    "fun fact": "I love coding at night and often find inspiration in quiet places!",
+    "quote": "Believe you can and you're halfway there. - Xolani Mbambo",
+    "default": "Hi, Having a tough time understanding you....?"
 };
 
-// Function to toggle chatbot visibility
-function toggleChatbot() {
-    const chatbotContainer = document.getElementById("chatbot-container");
-    chatbotContainer.style.display = chatbotContainer.style.display === "none" ? "flex" : "none";
-    
-    
-}
 
 // Function to handle sending messages
 function sendMessage() {
@@ -27,8 +24,7 @@ function sendMessage() {
 
     // Display chatbot response
     const botMessage = document.createElement("div");
-    botMessage.textContent = "Bot: " + (responses[userInput] || responses["default"]);
-    
+    botMessage.textContent = "Smart Bot: " + (responses[userInput] || responses["default"]);
     botMessage.style.color = "white";
     chatbotMessages.appendChild(botMessage);
 
