@@ -1,16 +1,16 @@
  /* Chatbot container styling */
  .chatbot-container {
-    width: 300px;
-    height: 400px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    margin-bottom: 60px;
-    border-radius: 8px;
-    display: none;
-    flex-direction: column;
-   
-  }
+  display: flex; /* Ensures the chatbot is always visible */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
   
   .chatbot-header {
     background-color: transparent;
