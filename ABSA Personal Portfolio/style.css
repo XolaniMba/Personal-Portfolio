@@ -265,7 +265,7 @@ section
  }
  .gridcard
  {
-    border: 2px solid blue;
+    border: 2px solid  #99ccff;
     gap: 2rem;
     border-radius: 6rem;
     padding: 3rem;
@@ -275,12 +275,13 @@ section
     justify-content: center;
     cursor: pointer;
     transition: 0.2 ease-in-out;
- }
+    background: rgba(255,255,205,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); }
 
 .gridcard:hover
 {
     transform: scale(1.02);
-    background-color: black;
     color: white;
 }
 .gridcard i
