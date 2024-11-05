@@ -7,6 +7,7 @@ An "About Me" section that highlights my professional background and skills.
 there are also Links to my social media profiles (LinkedIn, GitHub, Instagram).
 A downloadable resume.
 Sections for experience, projects, and certifications.
+Chatbot: A chatbot has been added to enhance interactivity on my portfolio
 Technologies Used --- HTML5: The core structure of the website. CSS3: Styling and layout, including Flexbox and media queries for responsiveness. 
 JavaScript: Adding interactivity to the navigation menu and enhancing user experience. Font Awesome: For social media icons and other icons on the website.
 Installation and Setup 
