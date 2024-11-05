@@ -24,6 +24,7 @@ Once the website is loaded, you can explore the following sections:
 4. Certifications: View the certifications I have achieved.
 5. Download CV: Click the "Download CV" button to download a PDF copy of my resume.
 6. Contact Me: Use the links provided to contact me via email or social media.
+7. Chatbot: Interact with the chatbot for a unique user experience.
 Contact me or reach out if there are any issues
 Email: xolanimbambo22@gmail.com
 LinkedIn: https://www.linkedin.com/in/xolani-mbambo-558955280/
