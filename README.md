@@ -25,4 +25,4 @@
 * LinkedIn: https://www.linkedin.com/in/xolani-mbambo-558955280/
 * Credly: https://www.credly.com/users/xolani-mbambo.af8092ac
 # Deployment Link !!
-* 
+* https://xolanimba.github.io/Personal-Portfolio/
