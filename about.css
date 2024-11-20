@@ -1,0 +1,277 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-image: url("background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+
+}
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 1rem; /* Adjust padding as needed */
+    justify-content: center; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps it on top of other elements */
+    
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button {
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #99ccff;
+    cursor: pointer;
+    font-weight: 500;
+    color: #99ccff;
+    transition: all 0.3s ease;
+    text-decoration: none; 
+}
+
+.button:hover {
+    background: linear-gradient(to right, #000099 0%, #99ccff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-color: #000099;
+}
+
+
+
+.about-container 
+{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.Myimage 
+{
+    grid-area: imageSect;
+}
+.allInfo 
+{
+    grid-area: infoSect;
+}
+.skillsSection 
+{
+    grid-area: skillsSect;
+}
+.about-container  .about-contents
+ {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 70px;
+    grid-template-areas: 'imageSect infoSect '
+                         'skillsSect skillsSect';
+                            
+ }
+.about-contents .Myimage
+{
+    position: relative;
+    min-width: 300px;
+    height: 400px;
+}
+.Myimage img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+    position: relative;
+    z-index: 2;
+}
+.about-contents .Myimage::after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #99ccff;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+.allInfo h1
+{
+    color: #dedce1;
+    font-size: 30px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+}
+.allInfo h1::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 110%;
+    left: 0;
+    background-color: #aaabb0;
+}
+.allInfo h1::after
+{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    top: calc(110%  - 1px);
+    left: 0px;
+    background-color: #99ccff;
+}
+.allInfo h2
+{
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: #99ccff;
+    padding: 14px 0px 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.allInfo p
+{
+    color: #aaabb0;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+    padding-bottom: 8px;
+}
+.myinfo 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #99ccff;
+}
+.myinfo div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.myinfo div span
+{
+    color: #99ccff;
+    letter-spacing: 1px;
+}
+.allInfo  button 
+{
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #99ccff;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 20px;
+}
+.allInfo  button:hover
+{
+    color: #99ccff;
+    border-color: blue;
+}
+
+/* skillsSection */
+ .skillsSection 
+ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 80px;
+ }
+ .skillsSection .subject
+ {
+    font-size: 17px;
+    font-weight: thin;
+    color: #aaabb0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ .progress-bar
+ {
+    width: 100%;
+    height: 16px;
+    background-color: #2b2a2f;
+    padding: 4px 6px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #444;
+    border-radius: 15px;
+ }
+ .progress-line 
+ {
+    position: relative;
+    height: 100%; /* Set this as needed, like height: 10px; */
+    background-color: #99ccff;
+    box-shadow: -1px -1px 2px #99ccff, 1px 1px 2px #99ccff;
+    border-radius: 15px;
+}
+.progress-line::after
+{
+    position: absolute;
+    content: attr(value);
+    top: -35px;
+    right: 0px;
+    transform: translateX(-50%);
+    color: #aaabb0;
+    font-size: 17px;
+}
+@media(max-width: 1068px)
+{
+    .about-container  .about-contents
+ {
+    grid-template-areas: 'imageSect skillsSect '
+                         'infoSect infoSect';
+                            
+ }
+ .skillsSection 
+ {
+    grid-template-columns:  1fr;
+    grid-gap: 20px;
+ }
+}
+
+@media(max-width: 868px)
+{
+    .about-container  .about-contents
+ {
+    grid-template-areas: 'imageSect imageSect '
+                         'infoSect infoSect'
+                         'skillsSect skillsSect';
+                            
+ }
+
+}
+@media(max-width: 668px )
+{
+    .myinfo 
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
+
