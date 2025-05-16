@@ -1,0 +1,730 @@
+/* main styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+body {
+  background-image: url("../assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Add to about.css */
+.Myimage {
+  width: 200px; /* Set your preferred width */
+  height: 200px; /* Set your preferred height */
+  background-image: url('..');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px; /* Optional: rounded corners */
+  /* Add more styles as needed */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  top: 1rem;
+  left: 25%;
+  transform: translateX(-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  /* backdrop-filter: blur(8px); */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4rem;
+  z-index: 1000;
+}
+.SAS a {
+  color: white;
+  text-decoration: underline;
+}
+.data {
+  color: white;
+  text-decoration: line-through;
+}
+
+/* logo start*/
+.slogo {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  transition: 0.3 ease-in-out;
+}
+.slogo:hover {
+  transform: 1.1;
+}
+/* logo End*/
+
+li a {
+  position: relative;
+  color: white;
+  font-weight: 300;
+}
+
+li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, #000099 0%, #99ccff 36%);
+}
+li a:hover::before {
+  width: 100%;
+}
+
+.visitmylink {
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-family: 500;
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, #a3a3f7 0%, #09d8ab 100%);
+}
+.visitmylink:hover {
+  background: linear-gradient(to right, #000099 0%, #99ccff 36%);
+  transform: scale(1.07);
+}
+#menu-icon {
+  font-size: 2rem;
+  display: none;
+}
+
+/* About Section start*/
+section {
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.aboutmain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutmain .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+/* image made it circle  start */
+.aboutmain img {
+  width: 30vw;
+  border-radius: 50%;
+}
+/* image made it circle  end */
+
+/* info box with name and role start*/
+.info-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.info-box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.info-box h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.info-box span {
+  background: linear-gradient(to right, #a3a3f7 0%, #09d8ab 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+}
+/* info box with name and role end*/
+
+/* button styling start*/
+/* main button group*/
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+/* main button group*/
+
+/* single  buttons */
+.button {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #99ccff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button-group a {
+  color: #99ccff;
+}
+.button:hover {
+  background: linear-gradient(to right, #000099 0%, #99ccff 100%);
+  color: transparent;
+  background-clip: text;
+}
+
+/* button styling end*/
+
+/* Social Media icons*/
+.contact-message {
+  text-align: center; /* Centers the message text */
+  font-size: 25px; /* Adjusts text size */
+  color: #99ccff; /* Adjusts text color */
+  margin-bottom: 1rem; /* Adds space between the text and icons */
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.social a {
+  color: #99ccff;
+  font-size: 50px;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #0077b5;
+}
+
+/* About Section end*/
+
+/* Experiance Section start*/
+.mytitle {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.exp-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.experiance img {
+  width: 24vw;
+  border-radius: 3rem;
+}
+.gridview {
+  display: grid;
+  grid-template-columns: repeat(2.1fr);
+}
+.gridcard {
+  border: 2px solid #99ccff;
+  gap: 2rem;
+  border-radius: 6rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2 ease-in-out;
+  background: rgba(255, 255, 205, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.gridcard:hover {
+  transform: scale(1.02);
+  color: white;
+}
+.gridcard i {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.gridcard span {
+  font-size: 3rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #a3a3f7 0%, #09d8ab 100%);
+  background-clip: text;
+  color: transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(219, 219, 219);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #a3a3f7 0%, #4de1f554 100%);
+}
+/* Experiance Section end*/
+
+/* Projects Section start*/
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min-max(180px, 1fr 1fr));
+  gap: 2rem;
+}
+.projects-card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid #99ccff;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.projects-card p {
+  color: white;
+}
+
+.projects-card:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-10px) scale(1.02);
+}
+.projects-card img {
+  width: 20vw;
+  border-radius: 1rem;
+}
+
+.projects-card:hover .button:hover {
+  border: 2px solid white;
+}
+.projects-card h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+h3 {
+  color: white;
+}
+/* Projects Section end*/
+
+/* Contact Section start*/
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.input-box input {
+  border-radius: 3rem;
+  border: 2px solid blue;
+  padding: 2rem 8rem;
+  font-size: 3rem;
+}
+.input-box input :placeholder {
+  font-size: 3rem;
+}
+.input {
+  position: relative;
+}
+.input i {
+  position: absolute;
+  font-size: 4rem;
+  top: 50%;
+  left: 10px;
+  transform: translate(50%, -50%);
+}
+/* Contact Section end*/
+
+/* footer Section start*/
+footer {
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.copyright {
+  font-size: 300;
+  margin-top: 2rem;
+}
+footer p {
+  color: white;
+}
+
+/* footer Section end*/
+
+/* responsiveness*/
+
+/* new contact me page start */
+.contactContainer {
+  min-height: 100vh;
+  padding-right: 320px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("image44.png") no-repeat center center/cover;
+}
+.contactContainer form {
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(15px); */
+  flex-wrap: wrap;
+}
+.contactContainer form h1 {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.contactContainer form input {
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid #fff;
+}
+.contactContainer form input::placeholder {
+  color: #ddd;
+}
+
+.contactContainer form #LastName,
+.contactContainer form #email,
+.contactContainer form #mobile {
+  margin-left: 20px;
+}
+.contactContainer form h4 {
+  color: #fff;
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+
+.contactContainer form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+textarea::-webkit-scrollbar {
+  width: 1rem;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #ff00ff;
+}
+.contactContainer form #buttonCon {
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  background: linear-gradient(to right, #000099 0%, #99ccff 36%);
+  width: 100px;
+  padding: 0;
+  margin-right: 500px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.contactContainer form #buttonCon:hover {
+  background: linear-gradient(to left, #3333cc 0%, #99ccff 100%);
+  color: transparent;
+  background-clip: text;
+}
+
+.contactContainer form #buttonCon {
+  opacity: 0.7;
+}
+
+/* new contact me page end */
+
+/*  pie chart start */
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  /* Show menu icon for mobile */
+  #menu-icon {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* When the menu is active, show the links */
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .info-box {
+    width: 90%;
+  }
+}
+
+button {
+  font-family: inherit;
+  font-size: 18px;
+  background: #99ccff;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.loader {
+  --path: #99ccff;
+  --dot: #5628ee;
+  --duration: 3s;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.loader:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  background: var(--dot);
+  top: 37px;
+  left: 19px;
+  transform: translate(-18px, -18px);
+  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+.loader svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
+  fill: none;
+  stroke: var(--path);
+  stroke-width: 10px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.loader svg polygon {
+  stroke-dasharray: 145 76 145 76;
+  stroke-dashoffset: 0;
+  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+.loader svg rect {
+  stroke-dasharray: 192 64 192 64;
+  stroke-dashoffset: 0;
+  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg circle {
+  stroke-dasharray: 150 50 150 50;
+  stroke-dashoffset: 75;
+  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+.loader.triangle {
+  width: 48px;
+}
+
+.loader.triangle:before {
+  left: 21px;
+  transform: translate(-10px, -18px);
+  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    infinite;
+}
+
+@keyframes pathTriangle {
+  33% {
+    stroke-dashoffset: 74;
+  }
+
+  66% {
+    stroke-dashoffset: 147;
+  }
+
+  100% {
+    stroke-dashoffset: 221;
+  }
+}
+
+@keyframes dotTriangle {
+  33% {
+    transform: translate(0, 0);
+  }
+
+  66% {
+    transform: translate(10px, -18px);
+  }
+
+  100% {
+    transform: translate(-10px, -18px);
+  }
+}
+
+@keyframes pathRect {
+  25% {
+    stroke-dashoffset: 64;
+  }
+
+  50% {
+    stroke-dashoffset: 128;
+  }
+
+  75% {
+    stroke-dashoffset: 192;
+  }
+
+  100% {
+    stroke-dashoffset: 256;
+  }
+}
+
+@keyframes dotRect {
+  25% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(18px, -18px);
+  }
+
+  75% {
+    transform: translate(0, -36px);
+  }
+
+  100% {
+    transform: translate(-18px, -18px);
+  }
+}
+
+@keyframes pathCircle {
+  25% {
+    stroke-dashoffset: 125;
+  }
+
+  50% {
+    stroke-dashoffset: 175;
+  }
+
+  75% {
+    stroke-dashoffset: 225;
+  }
+
+  100% {
+    stroke-dashoffset: 275;
+  }
+}
+
+.loader {
+  display: inline-block;
+  margin: 0 16px;
+}
