@@ -1,78 +1,109 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xolani </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xolani</title>
 
-<link rel="icon" type="image/x-icon" href="images\blue shirt.jpg"><!---small icon -->
-<link rel="stylesheet" href="style.css"><!-- css and html link-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"><!-- link for the fonts from font-awesome-->
+    <link rel="icon" type="image/x-icon" href="images\blue shirt.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- css and html link-->
+    <link rel="stylesheet" href="ChatStyling.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- link for the fonts from font-awesome-->
 
-</head>
-<body>
-  <header class="header"></header> 
-  <dl></dl> 
+    <style></style>
+  </head>
+  <body>
+    <header class="header"></header>
+    <dl></dl>
 
-<!-- About me section start-->
- <section id="about" class="aboutmain">
+    <!-- About me section start-->
+    <section id="about" class="aboutmain">
+      <!--about me 2nd container div start-->
+      <div class="about-container">
+        <!--Info box div start-->
+        <div class="info-box">
+          <div class="SAS">
+            <!--text div end-->
+            <span
+              ><a href="https://www.sas.com/en_za/home.html">SAS</a>
+              ninja—slicing through
+              <div class="data">DATA</div>
+              Like a pro, no spreadsheets required!</span
+            >
+            <br /><br />
+          </div>
 
-    <!--about me 2nd container div start-->
-        <div class="about-container">
-            <!--Info box div start-->
+          <!-- Button Group -->
+          <div class="button-group">
+            <a href="aboutme.html"><div class="button">ABOUT</div></a>
+            <a href="ContactMe.html"><div class="button">CONTACT</div></a>
+            <a href="Experiance.html"><div class="button">EXPERIENCE</div></a>
+            <a href="Projects.html"><div class="button">PROJECTS</div></a>
+            <a href="Certfication.html"
+              ><div class="button">CERTIFICATIONS</div></a
+            >
+          </div>
 
-           <div class="info-box">
+          <!-- Loader Container -->
+          <div class="loader-container">
+            <div class="loader">
+              <svg viewBox="0 0 80 80">
+                <circle r="32" cy="40" cx="40"></circle>
+              </svg>
+            </div>
+            <div class="loader triangle">
+              <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+              </svg>
+            </div>
+            <div class="loader">
+              <svg viewBox="0 0 80 80">
+                <rect height="64" width="64" y="8" x="8"></rect>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-               <div class="SAS">
-                 <!--text div end-->
- <span><a href="https://www.sas.com/en_za/home.html">SAS</a> ninja—slicing through <div class="data">DATA</div> Like a pro, no spreadsheets required!</span> <br><br> 
-</div>
+    <!-- Chatbot elements -->
+    <button id="chatbot-toggler" class="chatbot-toggler">
+      <span class="material-symbols-outlined">chat</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
 
-                 <!-- Button Group -->
-<div class="button-group">
-  <a href="aboutme.html"><div class="button">ABOUT</div></a>
-  <a href="ContactMe.html"><div class="button">CONTACT</div></a>
-  <a href="Experiance.html"><div class="button">EXPERIENCE</div></a>
-  <a href="Projects.html"><div class="button">PROJECTS</div></a>
-  <a href="Certfication.html">  <div class="button">CERTIFICATIONS</div></a> 
+    <div class="chatbot">
+      <header>
+        <h2>Portfolio Assistant</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>
+            Hi there! 👋<br />How can I help you with Xolani's portfolio today?
+          </p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea
+          placeholder="Ask me about Xolani's skills, projects, or experience..."
+          required
+        ></textarea>
+        <span id="send-btn" class="material-symbols-outlined">send</span>
+      </div>
+    </div>
 
-
-</div> 
-
-<!-- Loader Container -->
-<div class="loader-container">
-  <div class="loader">
-    <svg viewBox="0 0 80 80">
-      <circle r="32" cy="40" cx="40"></circle>
-    </svg>
-  </div>
-
-  <div class="loader triangle">
-    <svg viewBox="0 0 86 80">
-      <polygon points="43 8 79 72 7 72"></polygon>
-    </svg>
-  </div>
-
-  <div class="loader">
-    <svg viewBox="0 0 80 80">
-      <rect height="64" width="64" y="8" x="8"></rect>
-    </svg>
-  </div>
-</div>
-
-              
-
-
-                 <!-- footer start-->
-                 
-                  <footer> 
-                    
-    <p >All Rights Reserved |+27814366163 | xolanimbambo22@gmail.com </p>
-                  </footer>
-                   <!-- footer end-->
-
-
-
-<script src="script.js"></script>
-</body>
+    <script></script>
+    <script src="chatjs.js"></script>
+  </body>
 </html>
