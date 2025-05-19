@@ -315,7 +315,7 @@ section {
   transform: translateY(-10px) scale(1.02);
 }
 .projects-card img {
-  width: 20vw;
+  width: 10vw;
   border-radius: 1rem;
 }
 
