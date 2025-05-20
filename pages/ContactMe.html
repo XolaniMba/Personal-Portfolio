@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha384-5Jb1XTyBZnYz4qRSF5Ahn5pr6fypB6f1M1ct50pxTHZwZBtkupw5QLB/eHBgzOML" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="chat.css">
+  <script src="scriptch.js"></script> <!-- Chatbot JS file -->
+
+  <title>Contact</title>
+</head>
+<body>
+  <header class="header">
+    <div class="button-group">
+      <a href="index.html">  <div class="button">HOME</div></a>
+      <a href="aboutme.html"><div class="button">ABOUT</div></a>
+      <a href="Experiance.html"><div class="button">EXPERIENCE</div></a>
+      <a href="Projects.html"><div class="button">PROJECTS</div></a>
+      <a href="Certfication.html">  <div class="button">CERTIFICATIONS</div></a>
+    </div>
+    <i class="fa fa-bars" id="menu-icon"></i>
+  </header>
+  
+  <div class="contactContainer">
+    <form>
+      <h1>Contact</h1>
+      <input type="text" id="FirstName" placeholder="First Name" required>
+      <input type="text" id="LastName" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="example@email.com" required>
+      <input type="text" id="mobile" placeholder="+27123456789" required>
+      <h4>Type message here....</h4>
+      <textarea required></textarea>
+      <button>
+        <div class="svg-wrapper-1">
+          <div class="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+            </svg>
+          </div>
+        </div>
+        <span>Send</span>
+      </button>
+    </form>
+  </div>
+
+  <div class="contact-message">
+    <p>Feel free to follow or contact me using the socials below!</p>
+  </div>
+  
+  <div class="social">
+    <a href="https://www.linkedin.com/in/xolani-mbambo-558955280/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/who.istshego/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/XolaniMba"><i class="fa-brands fa-github"></i></a>
+  </div>
+
+  <footer> 
+    <p class="copyright" style="color: WHITE;">All Rights Reserved |+27814366163 | xolanimbambo22@gmail.com </p>
+  </footer>
+
+ <!-- Chatbot container -->
+<div class="chatbot-container" id="chatbot-container">
+  <div class="chatbot-header">
+      <span>DRIZZLE BOT</span>
+    <a href="ContactMe.html">  <button onclick="toggleChatbot()">clear</button></a>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages"></div>
+  <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+      <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- Chatbot Icon -->
+
+
+</body>
+</html>
