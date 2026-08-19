@@ -245,12 +245,12 @@ header.site{
 .about-info span:first-child{ font-family:'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--slate); text-transform: uppercase; letter-spacing: 0.06em; }
 .about-info span:last-child{ font-size: 0.94rem; color: var(--ink); }
 
-.skills-block{ margin-top: 40px; }
-.skill-row{ margin-bottom: 18px; }
-.skill-row .skill-label{ display:flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px; }
-.skill-row .skill-label .pct{ font-family:'IBM Plex Mono', monospace; color: var(--teal-deep); }
-.skill-track{ height: 6px; border-radius: 999px; background: var(--paper-dim); overflow: hidden; }
-.skill-fill{ height: 100%; border-radius: 999px; background: var(--teal); }
+.skills-block{ margin-top: 40px; display: grid; gap: 20px; }
+.skill-category .skill-cat-title{
+  font-family:'IBM Plex Mono', monospace; font-size: 0.76rem; color: var(--teal-deep);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px;
+}
+.skill-category .work-stack{ margin-top: 0; }
 
 /* ---------- CONTACT ---------- */
 .contact{ text-align:center; padding: 76px 0 40px; }
