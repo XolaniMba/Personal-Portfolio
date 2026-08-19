@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha384-5Jb1XTyBZnYz4qRSF5Ahn5pr6fypB6f1M1ct50pxTHZwZBtkupw5QLB/eHBgzOML"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="chat.css" />
-    <script src="scriptch.js"></script>
-    <!-- Chatbot JS file -->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Xolani Mbambo</title>
+<meta name="description" content="Get in touch with Xolani Mbambo — Software Developer." />
 
-    <title>Contact</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="button-group">
-        <a href="../index.html"> <div class="button">HOME</div></a
-        >
-        <a href="./aboutme.html"><div class="button">ABOUT</div></a>
-        <a href="./Experiance.html"><div class="button">EXPERIENCE</div></a>
-        <a href="./Projects.html"><div class="button">PROJECTS</div></a>
-        <a href="./Certfication.html">
-          <div class="button">CERTIFICATIONS</div></a
-        >
-      </div>
-      <i class="fa fa-bars" id="menu-icon"></i>
-    </header>
+<link rel="icon" type="image/jpeg" href="../assets/images/0P9A8103.JPG" />
 
-    <div class="contactContainer">
-      <form>
-        <h1>Contact</h1>
-        <input type="text" id="FirstName" placeholder="First Name" required />
-        <input type="text" id="LastName" placeholder="Last Name" required />
-        <input
-          type="email"
-          id="email"
-          placeholder="example@email.com"
-          required
-        />
-        <input type="text" id="mobile" placeholder="+27123456789" required />
-        <h4>Type message here....</h4>
-        <textarea required></textarea>
-        <button>
-          <div class="svg-wrapper-1">
-            <div class="svg-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path
-                  fill="currentColor"
-                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                ></path>
-              </svg>
-            </div>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="../index.html" class="brand"><span class="dot"></span>Xolani Mbambo</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="./aboutme.html">About</a>
+      <a href="./Experiance.html">Experience</a>
+      <a href="./Projects.html">Projects</a>
+      <a href="./Certfication.html">Certifications</a>
+      <a href="./ContactMe.html" class="active">Contact</a>
+    </nav>
+    <a class="nav-cta" href="../assets/PDF docs/Xolani Mbambo CV.pdf">Download CV</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="wrap page-header">
+    <div class="eyebrow">Contact</div>
+    <h1>Let's talk</h1>
+    <p>Open to junior software development and graduate opportunities. Send a message and I'll get back to you.</p>
+  </section>
+
+  <section class="wrap section" style="padding-top: 20px;">
+    <div class="contact-layout">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqpzwzle" method="POST">
+        <div class="form-row">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First name" required />
           </div>
-          <span>Send</span>
-        </button>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+        <div class="field">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="+27 12 345 6789" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Type your message here…" required></textarea>
+        </div>
+        <!-- Honeypot field: hidden from real visitors, catches basic spam bots -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <button type="submit" class="btn btn-primary" id="contactSubmit">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
-    </div>
 
-    <div class="contact-message">
-      <p>Feel free to follow or contact me using the socials below!</p>
+      <div class="contact-side">
+        <div class="contact-card">
+          <div class="contact-label">Email</div>
+          <a href="mailto:xolanimbambo22@gmail.com">xolanimbambo22@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Phone</div>
+          <p>+27 81 436 6163</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Location</div>
+          <p>Johannesburg, South Africa</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Elsewhere</div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/xolani-mbambo-558955280/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/XolaniMba" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.instagram.com/who.istshego/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+</main>
 
+<footer class="site">
+  <div class="wrap footer-row">
+    <span class="mono">© 2026 Xolani Mbambo · All rights reserved</span>
     <div class="social">
-      <a href="https://www.linkedin.com/in/xolani-mbambo-558955280/"
-        ><i class="fa-brands fa-linkedin"></i
-      ></a>
-      <a href="https://www.instagram.com/who.istshego/"
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-      <a href="https://github.com/XolaniMba"
-        ><i class="fa-brands fa-github"></i
-      ></a>
+      <a href="https://www.linkedin.com/in/xolani-mbambo-558955280/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/XolaniMba" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:xolanimbambo22@gmail.com">Email</a>
     </div>
+  </div>
+</footer>
 
-    <footer>
-      <p class="copyright" style="color: WHITE">
-        All Rights Reserved |+27814366163 | xolanimbambo22@gmail.com
-      </p>
-    </footer>
+<!-- Chatbot -->
+<button id="chatbot-toggler" class="chatbot-toggler" aria-label="Toggle portfolio assistant" aria-expanded="false">
+  <span class="material-symbols-outlined chat-icon">chat</span>
+  <span class="material-symbols-outlined close-icon">close</span>
+</button>
 
-    <!-- Chatbot container -->
-    <div class="chatbot-container" id="chatbot-container">
-      <div class="chatbot-header">
-        <span>DRIZZLE BOT</span>
-        <a href="ContactMe.html">
-          <button onclick="toggleChatbot()">clear</button></a
-        >
-      </div>
-      <div class="chatbot-messages" id="chatbot-messages"></div>
-      <div class="chatbot-input">
-        <input
-          type="text"
-          id="user-input"
-          placeholder="Type your message here..."
-          onkeypress="handleKeyPress(event)"
-        />
-        <button onclick="sendMessage()">Send</button>
-      </div>
-    </div>
+<div class="chatbot" id="chatbot">
+  <header>
+    <h2>Portfolio Assistant</h2>
+    <span class="close-btn material-symbols-outlined">close</span>
+  </header>
+  <ul class="chatbox">
+    <li class="chat incoming">
+      <span class="material-symbols-outlined">smart_toy</span>
+      <p>Hi there! How can I help you with Xolani's portfolio today?</p>
+    </li>
+  </ul>
+  <div class="chat-input">
+    <textarea placeholder="Ask about skills, projects, certifications…" rows="1"></textarea>
+    <span id="send-btn" class="material-symbols-outlined">send</span>
+  </div>
+</div>
 
-    <!-- Chatbot Icon -->
-  </body>
+<script src="../js/site.js"></script>
+</body>
 </html>
